@@ -1,3 +1,6 @@
 Get-CimInstance -ClassName Win32_DeviceGuard -NameSpace root\Microsoft\Windows\DeviceGuard
 
 VirtualizationBasedSecurityStatus            : 0
+
+MSIFNO
+Virtualization-based security	Not enabled
