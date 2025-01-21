@@ -1,0 +1,2 @@
+DISM.exe /Online /Set-ReservedStorageState /State:Disabled
+ fsutil storagereserve query C:
