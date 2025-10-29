@@ -12,14 +12,15 @@ set /p choice=Your choice:
 if /I "%choice%"=="E" (
     echo Enabling %ServiceName%...
     REG ADD "%RegPath%" /v Start /t REG_DWORD /d 3 /f
-    echo %ServiceName% enabled (Disabled ).
+    echo %ServiceName% enabled (Manual ).
 ) else if /I "%choice%"=="D" (
     echo Disabling %ServiceName%...
     REG ADD "%RegPath%" /v Start /t REG_DWORD /d 4 /f
-    echo %ServiceName% disabled (Manual ).
+    echo %ServiceName% disabled (Disabled ).
 ) else (
     echo Invalid choice. Exiting...
 )
 
 pause
+
 
